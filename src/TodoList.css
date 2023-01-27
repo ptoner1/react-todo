@@ -1,0 +1,128 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-container {
+    background-color: rgba(255, 255, 255, 0.752);
+    width: 70vw;
+    margin-top: 2vh;
+    padding: 1vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-span {
+    float: left;
+    width: 85%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icons {
+    float: right;
+}
+
+.edit {
+    width: 3vw;
+    background-color: rgba(255, 248, 42, 0.352);
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: .5vw;
+}
+
+.edit:hover {
+    scale: 1.1;
+    translate: .25vw -.25vh;
+    background-color: rgb(244, 255, 42);
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.edit:active {
+    background-color: rgb(190, 187, 0);
+    scale: 1.05;
+    translate: .125vw 0;
+    box-shadow: none;
+}
+
+.edit-form {
+    float: left;
+    width: 85%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.trashcan {
+    width: 3vw;
+    background-color: rgba(255, 42, 42, 0.459);
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trashcan:hover {
+    scale: 1.1;
+    translate: .25vw -.25vh;
+    background-color: rgb(255, 42, 42);
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.trashcan:active {
+    background-color: rgb(199, 2, 2);
+    scale: 1.05;
+    translate: .125vw 0;
+    box-shadow: none;
+}
+
+
+.input,
+.input:focus {
+    background-color: rgba(255, 255, 255, 0.701);
+    margin-right: 10px;
+    border: none;
+    height: 5vh;
+    width: 15vw;
+    padding: 0 20px;
+    outline: none;
+}
+
+.edit-input,
+.edit-input:focus {
+    width: 80%;
+}
+
+.submit-button {
+    height: 5vh;
+    width: 5vw;
+    border: none;
+    background-color: rgba(0, 255, 255, 0.286);
+    font-size: 16px;
+    padding: 0;
+    min-width: 35px;
+}
+
+.submit-button::before {
+    background-color: antiquewhite;
+    height: 5vh;
+    width: 5vw;
+}
+
+.submit-button:hover {
+    background-color: rgba(9, 165, 165, 0.449);
+}
+
+.submit-button:active {
+    background-color: rgba(5, 95, 95, 0.709);
+}
+
+.add-todo {
+    background-color: rgba(4, 240, 240, 0.349);
+}
